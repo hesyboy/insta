@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+
+    @font-face {
+        font-family: Vazir;
+        src: url('/assets/font/VazirRegular.ttf') format('truetype');
+    }
+
+
+
+    body{
+        font-family: Vazir!important;
+    }
+
+
+};
