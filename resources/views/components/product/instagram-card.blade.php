@@ -45,11 +45,6 @@
                     میانگین ویو  : 45
                 </div>
             </div>
-            <div class="flex justify-center px-2 mt-2">
-                <div class="text-base font-semibold text-indigo-800">
-                    قیمت  :  2,500,000 تومان
-                </div>
-            </div>
         </div>
 
 
@@ -58,8 +53,17 @@
             <a href="" class="text-base px-5 py-2 bg-indigo-800 rounded-xl text-white hover:bg-indigo-900">خرید پیج اینستاگرام</a>
         </div> --}}
         <div class="flex gap-3 justify-between">
-            <a href="" class=" text-xs text-center px-5 py-2 bg-indigo-800 rounded-xl text-white hover:bg-indigo-900">افزودن به سبد خرید </a>
-            <a href="" class=" text-xs text-center px-5 py-2 bg-gray-800 rounded-xl text-white hover:bg-gray-900">مشاهده جزئیات</a>
+            <a href="" class="flex items-center justify-center text-xs text-center p-2 bg-gray-800 rounded-xl text-white hover:bg-orange-600">
+                <ion-icon name="cart-outline" class="text-2xl"></ion-icon>
+            </a>
+            <div class="w-full flex items-center justify-center text-xs text-center p-2 bg-gray-800 rounded-xl text-white hover:bg-gray-900">
+                <div class="text-base ">
+                      12,500,000 تومان
+                </div>
+            </div>
+            <a href="" class="flex items-center justify-center text-xs text-center p-2 bg-gray-800 rounded-xl text-white hover:bg-indigo-800">
+                <ion-icon name="eye-outline" class="text-2xl"></ion-icon>
+            </a>
         </div>
 
     </div>
