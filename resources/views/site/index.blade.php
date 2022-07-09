@@ -111,44 +111,11 @@
             </div>
 
 
-
-            <div>
-                <div class="tabs tabs-boxed">
-                    <a class="tab">Tab 1</a>
-                    <a class="tab tab-active">Tab 2</a>
-                    <a class="tab">Tab 3</a>
-                  </div>
-            </div>
-
-
-
-
-
         </div>
 
 
 
 
-            <div class="flex gap-5 my-5">
-                <div class="w-1/4">
-                    swwwwwwww
-                </div>
-
-                <div class="w-3/4">
-                    <div class="bg-gray-800 p-3 rounded-lg my-3">
-                        <div class=" text-xl text-white">
-                            فروش ویژه پیج
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-4 gap-5">
-                        @for ($i=0;$i<10;$i++)
-
-                            <x-product.instagram-card/>
-                        @endfor
-                    </div>
-                </div>
-            </div>
 
 
 

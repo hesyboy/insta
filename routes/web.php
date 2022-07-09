@@ -21,4 +21,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[SiteController::class,'index'])->name('site.index');
 
+Route::get('/explore',[SiteController::class,'explore'])->name('site.explore');
+
+Route::get('/product/1',[SiteController::class,'product'])->name('site.product');
+
+
+
 
