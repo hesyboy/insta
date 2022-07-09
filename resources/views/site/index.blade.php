@@ -118,7 +118,7 @@
                     <a class="tab tab-active">Tab 2</a>
                     <a class="tab">Tab 3</a>
                   </div>
-                </div>
+            </div>
 
 
 
