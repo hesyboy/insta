@@ -1,7 +1,7 @@
 @extends('site.layouts.master')
 
 @section('body')
-<div class="bg-indigo-900">
+<div class="bg-slate-800">
     <div class="container mx-auto py-24 ">
         <div class="flex justify-center ">
             <div class="flex flex-col gap-12 items-center">
@@ -18,13 +18,13 @@
 
 
                     <form action="" class="mt-5">
-                        <div class="flex gap-3">
-                            <select class="select select-bordered text-base w-60">
-                                <option disabled selected>انتخاب دسته بندی</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
-                            </select>
-                            <select class="select select-bordered text-base w-40">
+                        <div class="flex flex-col items-end justify-center gap-3">
+                            <div class="w-full flex flex-col items-center justify-center gap-3">
+                                <span class="text-white text-xs text-right">
+                                    برای خرید پیج ، ابتدا دسته بندی مورد نطر را مشخص کنید
+                                </span>
+                            </div>
+                            {{-- <select class="select select-bordered text-base w-40">
                                 <option disabled selected>تعداد فالور</option>
                                 <option>Han Solo</option>
                                 <option>Greedo</option>
@@ -33,23 +33,31 @@
                                 <option disabled selected>تعداد فالویینگ</option>
                                 <option>Han Solo</option>
                                 <option>Greedo</option>
-                            </select>
+                            </select> --}}
 
-                            <a href="" class="flex gap-2 items-center justify-center text-base px-5 py-2 bg-orange-600 rounded-xl text-white hover:bg-orange-500">
-                                <ion-icon name="search-outline" class="text-3xl"></ion-icon>
-                                <span>جستجو و خرید </span>
-                            </a>
+                            <div class="flex items-end justify-center gap-3">
+                                <select class="select select-bordered text-base w-64">
+                                    <option disabled selected>انتخاب دسته بندی</option>
+                                    <option>Han Solo</option>
+                                    <option>Greedo</option>
+                                </select>
+                                <a href="" class="w-auto flex gap-2 items-center justify-center text-base px-5 py-2 bg-orange-600 rounded-xl text-white hover:bg-orange-500">
+                                    <ion-icon name="search-outline" class="text-3xl"></ion-icon>
+                                    <span>جستجو   </span>
+                                </a>
+                            </div>
+
 
                         </div>
                     </form>
 
-                    <div class="text-sm text-white mt-3">
+                    <div class="flex flex-col gap-3 text-xs text-white mt-3">
                         <span>
                             اگر قصد فروش پیج خود را دارید اینجا کلیک کنید .
                         </span>
-                        <span class="text-orange-600 hover:text-orange-500  ">
-                            فروش پیج اینستاگرام
-                        </span>
+                        <a href="" class="flex gap-2 items-center justify-center text-base px-5 py-2 bg-indigo-800 rounded-xl text-white hover:bg-indigo-700">
+                            <span>فروش پیج اینستاگرام</span>
+                        </a>
                     </div>
 
 

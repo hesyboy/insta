@@ -2,8 +2,9 @@
     <a href="{{route('site.product')}}" class="relative bg-white rounded-box p-3 flex flex-col gap-5 w-68 group">
 
 
-        <div class="overflow-hidden transition-all duration-500 flex flex-col text-white  items-center bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-3 rounded-xl relative">
-
+        <div class="overflow-hidden transition-all duration-500 flex flex-col text-white  items-center
+         bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
+         p-3 rounded-xl relative">
             <div class="w-full flex flex-col justify-end items-end gap-2">
                 <div class="flex w-full items-center justify-between">
                     <div class="flex gap-1">
@@ -82,9 +83,8 @@
 
 
         <div class="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-all duration-500 overflow-hidden p-5 h-full w-full">
-            {{-- <img class="rounded-xl h-" src="{{asset('assets/images/instagram1.jpg')}}" alt=""> --}}
             <div class="w-full h-full flex flex-col justify-center rounded-xl" style="background-size: cover; background-image: url({{asset('assets/images/instagram1.jpg')}})">
-                <div class="flex flex-col w-full gap-3 justify-center items-center">
+                {{-- <div class="flex flex-col w-full gap-3 justify-center items-center">
                     <div href="" class="flex w-2/3 gap-2 items-center justify-center text-sm text-center p-2 bg-gray-800 rounded-xl text-gray-100 hover:bg-indigo-600 hover:text-white">
                         <ion-icon name="cart-outline" class="text-2xl"></ion-icon>
                         <span>خرید</span>
@@ -93,7 +93,7 @@
                         <ion-icon name="eye-outline" class="text-2xl"></ion-icon>
                         <span>مشاهده</span>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
 

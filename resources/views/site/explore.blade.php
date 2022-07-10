@@ -1,45 +1,44 @@
 @extends('site.layouts.master')
 
 @section('body')
-<div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
+<div class="bg-slate-800">
     <div class="container mx-auto py-10 ">
         <div class="flex justify-center ">
             <div class="flex w-full justify-between items-center">
-                <div class="flex flex-col gap-3">
-                    <div class="text-5xl font-semibold text-white">
-                        اینستاگرام
+                <div class="flex flex-col gap-5">
+                    <div class="text-3xl font-semibold text-white">
+                        خرید پیج اینستاگرام
                     </div>
-                    <div class="text-sm breadcrumbs text-gray-100" dir="rtl">
+                    {{-- <div class="text-base breadcrumbs text-gray-100" dir="rtl">
                         <ul>
                           <li><a>Home</a></li>
                           <li><a>Documents</a></li>
                           <li>Add Document</li>
                         </ul>
-                      </div>
+                      </div> --}}
                 </div>
                 <div  class="flex flex-col gap-5 items-center">
 
-                    <form action="" class="mt-5">
+                    <form action="" class="">
                         <div class="flex gap-3">
-                            <select class="select select-bordered text-base w-60">
+                            <select class="select select-bordered text-sm bg-gray-200">
                                 <option disabled selected>انتخاب دسته بندی</option>
                                 <option>Han Solo</option>
                                 <option>Greedo</option>
                             </select>
-                            <select class="select select-bordered text-base w-40">
+                            <select class="select select-bordered text-sm bg-gray-200">
                                 <option disabled selected>تعداد فالور</option>
                                 <option>Han Solo</option>
                                 <option>Greedo</option>
                             </select>
-                            <select class="select select-bordered text-base w-40">
+                            <select class="select select-bordered text-sm bg-gray-200">
                                 <option disabled selected>تعداد فالویینگ</option>
                                 <option>Han Solo</option>
                                 <option>Greedo</option>
                             </select>
 
-                            <a href="" class="flex gap-2 items-center justify-center text-base px-5 py-2 bg-orange-600 rounded-xl text-white hover:bg-orange-500">
+                            <a href="" class="flex gap-2 items-center justify-center text-base px-5 py-2 bg-gray-900 rounded-xl text-white hover:bg-orange-500">
                                 <ion-icon name="search-outline" class="text-3xl"></ion-icon>
-                                <span>جستجو و خرید </span>
                             </a>
 
                         </div>

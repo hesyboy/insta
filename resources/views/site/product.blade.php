@@ -1,7 +1,7 @@
 @extends('site.layouts.master')
 
 @section('body')
-<div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
+<div class="bg-slate-800">
     <div class="container mx-auto py-10 ">
         <div class="flex justify-center ">
             <div class="flex w-full justify-between items-center">
@@ -9,7 +9,7 @@
                     <div class="text-4xl font-semibold text-white">
                         <span>خرید پیج اینستاگرام کد #35</span>
                     </div>
-                    <div class="text-sm breadcrumbs text-gray-100" dir="rtl">
+                    <div class="text-base breadcrumbs text-gray-100" dir="rtl">
                         <ul>
                           <li><a>Home</a></li>
                           <li><a>Documents</a></li>
@@ -97,8 +97,8 @@
                                 <div class="w-full flex flex-col justify-end items-end gap-2">
                                     <div class="flex w-full items-center justify-between">
                                         <div class="flex gap-1">
-                                            <div class="text-xs px-2 py-1 border rounded-xl text-gray-100 border-gray-100">30% تخفیف</div>
-                                            <div class="text-xs px-2 py-1 border rounded-xl text-gray-100 border-gray-100">ویژه</div>
+                                            <div class="text-sm px-2 py-1 border-2 rounded-xl text-gray-100 border-gray-100 font-semibold">30% تخفیف</div>
+                                            <div class="text-sm px-2 py-1 border-2 rounded-xl text-gray-100 border-gray-100 font-semibold">ویژه</div>
 
                                         </div>
                                         <ion-icon name="logo-instagram" class="text-7xl"></ion-icon>
