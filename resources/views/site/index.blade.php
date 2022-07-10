@@ -1,39 +1,77 @@
 @extends('site.layouts.master')
 
 @section('body')
-<div class="bg-slate-800">
+<div class="w-full
+bg-gradient-to-r
+from-indigo-700
+via-purple-700
+to-pink-700
+background-animate " id="gradient">
+    <style>
+        body {
+          font-family: "Inter", sans-serif;
+        }
+
+        .background-animate {
+          background-size: 400%;
+
+          -webkit-animation: AnimationName 6s ease infinite;
+          -moz-animation: AnimationName 6s ease infinite;
+          animation: AnimationName 6s ease infinite;
+        }
+
+        @keyframes AnimationName {
+          0%,
+          100% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+      </style>
+
+
+
     <div class="container mx-auto py-24 ">
-        <div class="flex justify-center ">
-            <div class="flex flex-col gap-12 items-center">
-                <div class="text-7xl font-semibold text-white">
-                    اینستاگرام
+        <div class="flex justify-center items-center gap-5 ">
+            <div class="flex flex-col justify-center items-center">
+                <ion-icon name="logo-instagram" class="text-[300px] text-gray-200"></ion-icon>
+                <div class="text-4xl font-semibold text-gray-200">
+                    dginsta.com
                 </div>
-                <div  class="flex flex-col gap-5 items-center">
-                    <div class="text-3xl text-white">
-                           سامانه هوشمند خرید و فروش اکانت و پیج اینستاگرام
+            </div>
+            <div class="flex flex-col gap-5 items-center">
+                <div class="w-full flex flex-col gap-5">
+                    <div class="text-6xl font-bold text-gray-200">
+                        دیجی اینستا
                     </div>
-                    <div class="text-xl text-white">
-                        خرید و فروش بدون واسطه و دارای گارانتی خرید
+
+                </div>
+                <div  class="w-full flex flex-col gap-8">
+                    <div class="text-xl text-gray-200">
+                        سایت رایگان آگهی خرید و فروش پیج و اکانت اینستاگرام
                     </div>
 
 
-                    <form action="" class="mt-5">
+                    <div class="flex gap-5">
+                        <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-orange-600 hover:bg-orange-500 transition-all duration-500  px-3 py-2 rounded-md text-base font-medium">
+                            <ion-icon name="add" class="text-4xl"></ion-icon>
+                            <span>فروش پیج اینستاگرام    </span>
+                          </a>
+
+                          <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-indigo-800 hover:bg-indigo-900 transition-all duration-500  px-3 py-2 rounded-md text-base font-medium">
+                            <ion-icon name="basket-outline" class="text-4xl"></ion-icon>
+                            <span>خرید پیج اینستاگرام    </span>
+                          </a>
+                    </div>
+                    {{-- <form action="" class="mt-5">
                         <div class="flex flex-col items-end justify-center gap-3">
                             <div class="w-full flex flex-col items-center justify-center gap-3">
                                 <span class="text-white text-xs text-right">
                                     برای خرید پیج ، ابتدا دسته بندی مورد نطر را مشخص کنید
                                 </span>
                             </div>
-                            {{-- <select class="select select-bordered text-base w-40">
-                                <option disabled selected>تعداد فالور</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
-                            </select>
-                            <select class="select select-bordered text-base w-40">
-                                <option disabled selected>تعداد فالویینگ</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
-                            </select> --}}
 
                             <div class="flex items-end justify-center gap-3">
                                 <select class="select select-bordered text-base w-64">
@@ -49,8 +87,8 @@
 
 
                         </div>
-                    </form>
-
+                    </form> --}}
+{{--
                     <div class="flex flex-col gap-3 text-xs text-white mt-3">
                         <span>
                             اگر قصد فروش پیج خود را دارید اینجا کلیک کنید .
@@ -58,7 +96,7 @@
                         <a href="" class="flex gap-2 items-center justify-center text-base px-5 py-2 bg-indigo-800 rounded-xl text-white hover:bg-indigo-700">
                             <span>فروش پیج اینستاگرام</span>
                         </a>
-                    </div>
+                    </div> --}}
 
 
                     {{-- <div class="flex gap-5 mt-5">
@@ -100,7 +138,7 @@
                 <div class="swiper-wrapper">
                     @for ($i=0;$i<10;$i++)
                         <div class="swiper-slide">
-                            <x-product.instagram-card/>
+                            <x-product.instagram-card2/>
                         </div>
                     @endfor
                 </div>

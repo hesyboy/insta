@@ -8,14 +8,14 @@
 @layer base {
 
     @font-face {
-        font-family: iransans;
-        src: url('/assets/font/IRANSansWeb_light.ttf') format('truetype');
+        font-family: vazir;
+        src: url('/assets/font/VazirRegular.ttf') format('truetype');
     }
 
 
 
     body{
-        font-family: iransans!important;
+        font-family: vazir!important;
     }
 
 

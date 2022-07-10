@@ -80,7 +80,7 @@
 
 
             <div class="flex gap-5 my-5">
-                <div class="w-1/4 flex flex-col gap-5">
+                <div class="w-1/5 flex flex-col gap-5">
 
                     <div class="flex flex-col gap-3 p-3 bg-white rounded-xl">
                         <div class="font-semibold text-lg">
@@ -177,7 +177,7 @@
 
                 </div>
 
-                <div class="w-3/4">
+                <div class="w-4/5">
 
 
                     <div class="grid grid-cols-4 gap-5">

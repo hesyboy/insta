@@ -2,7 +2,7 @@
 <div class=" bg-slate-800">
     <div class=" container w-full mx-auto px-2 py-3 flex justify-between ">
         <div class=" text-gray-100 text-xs">
-            اینستاگرام | اولین سامانه هوشمند خرید و فروش پیج و اکانت اینستاگرام
+            دی جی اینستا | اولین سامانه هوشمند خرید و فروش پیج و اکانت اینستاگرام
         </div>
         <div class="flex gap-2 text-gray-300 text-xs">
             <a class="hover:text-gray-100" href="">آموزش کار با سایت</a>
@@ -45,10 +45,10 @@
             </svg>
           </button>
         </div>
-        <div class="flex gap-3 items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-            <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
+        <div class="flex gap-8 items-center justify-center ">
+          <div class="flex flex-col items-center">
+                <h2 class="text-2xl text-gray-200">دیجی اینستا</h2>
+                <span class="text-base text-gray-400">DG INSTA</span>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex gap-2 ">
@@ -64,16 +64,29 @@
 
               <a href="#" class="text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">تخفیف دار ها</a>
 
+            <a href="#" class="relative text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+               <span>خرید لایک و فالور</span>
+               <span class="text-xs absolute -bottom-1 right-4 text-orange-500">به زودی</span>
+            </a>
+
 
             </div>
           </div>
         </div>
         <div class=" flex gap-3 items-center sm:static sm:inset-auto">
 
-            <a href="/explore" class="text-gray-100 hover:text-white bg-amber-700 hover:bg-amber-600 transition-all duration-500  px-3 py-2 rounded-md text-sm font-medium">خرید پیج اینستاگرام  </a>
+            <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-orange-600 hover:bg-orange-500 transition-all duration-500  px-3 py-2 rounded-md text-sm font-medium">
+                <ion-icon name="add" class="text-2xl"></ion-icon>
+                <span>فروش پیج اینستاگرام    </span>
+              </a>
+
+              <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-indigo-800 hover:bg-indigo-900 transition-all duration-500  px-3 py-2 rounded-md text-sm font-medium">
+                <ion-icon name="basket-outline" class="text-2xl"></ion-icon>
+                <span>خرید پیج اینستاگرام    </span>
+              </a>
 
 
-            <a href="#" class="text-gray-100 hover:text-white  bg-indigo-800 hover:bg-indigo-700 transition-all duration-500 px-3 py-2 rounded-md text-sm font-medium">فروش پیج اینستاگرام   </a>
+            {{-- <a href="#" class="text-gray-100 hover:text-white  bg-indigo-800 hover:bg-indigo-700 transition-all duration-500 px-3 py-2 rounded-md text-sm font-medium">فروش پیج اینستاگرام   </a> --}}
 
 
             <a href="/explore" class="flex justify-center items-center text-gray-200 hover:text-white bg-slate-800 hover:bg-slate-700 transition-all duration-500 px-3 py-2 rounded-md text-sm font-medium">
