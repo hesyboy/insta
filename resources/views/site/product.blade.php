@@ -1,4 +1,4 @@
-@extends('site.layouts.master')
+@extends('layouts.master')
 
 @section('body')
 <div class="bg-slate-800">
@@ -122,7 +122,7 @@
 
                                             </div>
                                             <div>
-                                                <h2 class="text-2xl text-gray-800"> پیج اینستاگرام کد #35</h2>
+                                                <h2 class="text-2xl text-gray-800">خرید پیج اینستاگرام کاملا ایرانی</h2>
                                             </div>
                                         </div>
                                         <div>

@@ -17,7 +17,7 @@
 
 </div>
 <nav class="bg-gray-900">
-    <div class=" container w-full mx-auto px-2">
+    <div class=" container w-full mx-auto px-2 py-2">
       <div class="relative flex items-center justify-between h-20">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -47,8 +47,8 @@
         </div>
         <div class="flex gap-8 items-center justify-center ">
           <div class="flex flex-col items-center">
-                <h2 class="text-2xl text-gray-200">دیجی اینستا</h2>
-                <span class="text-xl text-gray-400 font-semibold">DG Insta</span>
+                <h2 class="text-3xl text-gray-200">دیجی اینستا</h2>
+                {{-- <span class="text-2xl text-gray-400">DG Insta</span> --}}
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex gap-2 ">
@@ -58,16 +58,30 @@
                 <span>خانه</span>
               </a>
 
-              <a href="#" class="text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">دسته بندی ها</a>
+              <a href="#" class="text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">خرید پیج اینستاگرام </a>
 
-              <a href="#" class="text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">جدیدترین ها</a>
+              <a href="#" class="text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">فروش پیج اینستاگرام</a>
 
-              <a href="#" class="text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">تخفیف دار ها</a>
 
-            <a href="#" class="relative text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+            {{-- <a href="#" class="relative text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                <span>خرید لایک و فالور</span>
                <span class="text-xs absolute -bottom-1 right-4 text-orange-500">به زودی</span>
-            </a>
+            </a> --}}
+
+            <a href="#" class="relative text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                <span>امنیت پیج اینستاگرام  </span>
+                <span class="text-xs absolute -bottom-1 right-4 text-orange-500">به زودی</span>
+             </a>
+
+             <a href="#" class="relative text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                <span>تولید محتوا    </span>
+                <span class="text-xs absolute -bottom-1 right-4 text-orange-500">به زودی</span>
+             </a>
+
+             <a href="#" class="relative text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                <span>مشاوره مارکتینگ   </span>
+                <span class="text-xs absolute -bottom-1 right-4 text-orange-500">به زودی</span>
+             </a>
 
 
             </div>
@@ -75,7 +89,7 @@
         </div>
         <div class=" flex gap-3 items-center sm:static sm:inset-auto">
 
-            <a href="/explore" class="flex items-center gap-2 font-medium text-gray-100 hover:text-white bg-slate-800 hover:bg-orange-400 transition-all duration-500  px-3 py-2 rounded-md text-sm">
+            <a href="/explore" class="flex items-center gap-2 font-medium text-gray-100 hover:text-white bg-slate-800 hover:bg-orange-500 transition-all duration-500  px-3 py-2 rounded-md text-sm">
                 <ion-icon name="add" class="text-2xl"></ion-icon>
                 <span>فروش پیج اینستاگرام    </span>
               </a>
@@ -110,4 +124,6 @@
         <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
       </div>
     </div>
-  </nav>
+</nav>
+
+

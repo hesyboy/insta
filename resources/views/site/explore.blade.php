@@ -1,74 +1,84 @@
-@extends('site.layouts.master')
+@extends('layouts.master')
 
 @section('body')
-<div class="bg-slate-800">
-    <div class="container mx-auto py-10 ">
-        <div class="flex justify-center ">
-            <div class="flex w-full justify-between items-center">
-                <div class="flex flex-col gap-5">
-                    <div class="text-3xl font-semibold text-white">
-                        خرید پیج اینستاگرام
-                    </div>
-                    {{-- <div class="text-base breadcrumbs text-gray-100" dir="rtl">
-                        <ul>
-                          <li><a>Home</a></li>
-                          <li><a>Documents</a></li>
-                          <li>Add Document</li>
-                        </ul>
-                      </div> --}}
-                </div>
-                <div  class="flex flex-col gap-5 items-center">
+<div class="bg-gray-900">
+    <div class=" container w-full mx-auto px-2 border-t-2 border-slate-600 py-5">
+      <div class="relative flex items-center justify-between ">
+        <div class="flex flex-col gap-2 text-gray-300 ">
+            <div class="text-xl text-gray-300 ">
+                خرید پیج اینستاگرام
+            </div>
+            <div class="text-sm">
+                دی جی اینستا | اولین سامانه هوشمند خرید و فروش پیج و اکانت اینستاگرام
 
-                    <form action="" class="">
-                        <div class="flex gap-3">
-                            <select class="select select-bordered text-sm bg-gray-200">
-                                <option disabled selected>انتخاب دسته بندی</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
-                            </select>
-                            <select class="select select-bordered text-sm bg-gray-200">
-                                <option disabled selected>تعداد فالور</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
-                            </select>
-                            <select class="select select-bordered text-sm bg-gray-200">
-                                <option disabled selected>تعداد فالویینگ</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
-                            </select>
-
-                            <a href="" class="flex gap-2 items-center justify-center text-base px-5 py-2 bg-gray-900 rounded-xl text-white hover:bg-orange-500">
-                                <ion-icon name="search-outline" class="text-3xl"></ion-icon>
-                            </a>
-
-                        </div>
-                    </form>
-                    </div>
-
-
-                    {{-- <div class="flex gap-5 mt-5">
-                        <a href="" class="text-base px-5 py-2 bg-indigo-800 rounded-xl text-white hover:bg-indigo-900">خرید پیج اینستاگرام</a>
-                        <a href="" class="text-base px-5 py-2 bg-orange-600 rounded-xl text-white hover:bg-orange-700">فروش پیج اینستاگرام</a>
-                    </div> --}}
-
-
-
-
-
-
-
-                </div>
-                {{-- <div class="text-2xl font-semibold">
-                    خرید و فروش بدون واسطه پیج و اکانت اینستاگرام
-                </div>
-                <div class="text-2xl font-semibold">
-                    دارای گارانتی و ضمانت خرید 10 روزه
-                </div> --}}
             </div>
         </div>
 
+        <div class="flex gap-8 items-center justify-center ">
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex gap-2 ">
+
+              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">دسته بندی ها</a>
+
+              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">جدیدترین ها</a>
+
+              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">تخفیف دار ها</a>
+
+              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">کارشناسی شده   </a>
+
+
+            {{-- <a href="#" class="relative text-gray-300 hover:bg-slate-800 transition-all duration-500 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+               <span>خرید لایک و فالور</span>
+               <span class="text-xs absolute -bottom-1 right-4 text-orange-500">به زودی</span>
+            </a> --}}
+
+
+
+            </div>
+          </div>
+        </div>
+        {{-- <div  class="flex flex-col gap-5 items-center">
+
+            <form action="" class="">
+                <div class="flex gap-3">
+                    <select class="text-sm bg-gray-200 p-2 px-3 h-9 rounded font-semibold">
+                        <option disabled selected>انتخاب دسته بندی</option>
+                        <option>Han Solo</option>
+                        <option>Greedo</option>
+                    </select>
+                    <select class="select select-bordered text-sm bg-gray-200">
+                        <option disabled selected>تعداد فالور</option>
+                        <option>Han Solo</option>
+                        <option>Greedo</option>
+                    </select>
+                    <select class="select select-bordered text-sm bg-gray-200">
+                        <option disabled selected>تعداد فالویینگ</option>
+                        <option>Han Solo</option>
+                        <option>Greedo</option>
+                    </select>
+
+                    <a href="" class="flex gap-2 items-center justify-center text-base px-5 py-2 bg-gray-900 rounded-xl text-white hover:bg-orange-500">
+                        <ion-icon name="search-outline" class="text-3xl"></ion-icon>
+                    </a>
+
+                </div>
+            </form>
+        </div> --}}
+      </div>
     </div>
+
+
 </div>
+
+
+
+
+
+
+
+{{-- Page Cointent --}}
+
+
 
 <div class="bg-gray-100">
     <div class="container mx-auto my-3">
@@ -136,27 +146,12 @@
 
                     </div>
 
-                    <div class="flex flex-col gap-3 p-3 bg-white rounded-xl">
-                        <div class="font-semibold text-lg">
-                            بر اساس مدت گارانتی
-                        </div>
-                        <div dir="ltr">
-                            <input type="range" min="0" max="100" value="0" class="range" step="25" />
-                            <div class="w-full flex justify-between text-xs px-2">
-                                <span>1K</span>
-                                <span>5K</span>
-                                <span>10K</span>
-                                <span>30K</span>
-                                <span>50K+</span>
-                            </div>
-                        </div>
 
-                    </div>
 
 
                     <div class="flex justify-between gap-3 p-3 bg-white rounded-xl">
                         <div class="font-semibold text-lg">
-                           ویژه
+                           کارشناسی شده
                         </div>
                         <div>
                             <input type="checkbox" class="toggle" checked />

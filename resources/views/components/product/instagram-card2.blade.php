@@ -9,21 +9,23 @@
                 <div class="w-full flex justify-between">
 
                     <div class=" flex gap-2">
-                        <div class="flex items-center justify-center bg-gray-800 rounded-xl shadow-lg p-1.5 text-sm tooltip" data-tip="کد پیج">
-                            <span class="text-xs text-gray-200"> #35</span>
+                        <div class="flex items-center justify-center bg-gray-800 rounded-xl shadow-lg p-1.5 text-sm tooltip" data-tip=" نردبان شده">
+                            <ion-icon name="flash" class="text-xl text-orange-400"  ></ion-icon>
                         </div>
-                        {{-- <div class="flex items-center justify-center bg-white rounded-xl shadow-lg p-2 font-semibold text-sm ">
-                            <span  class="text-xs text-gray-800 ">%30 تخفیف</span>
-                        </div> --}}
+                        <div class="flex items-center justify-center bg-gray-800 rounded-xl shadow-lg p-1.5 text-sm  tooltip" data-tip=" تایید شده">
+                            <ion-icon name="shield-checkmark" class="text-xl text-orange-400"></ion-icon>
+                        </div>
                     </div>
 
                     <div class=" flex gap-2 z-50">
-                        <div class="flex items-center justify-center bg-white rounded-xl shadow-lg p-1.5 text-sm tooltip" data-tip=" نردبان شده">
-                            <ion-icon name="flash" class="text-xl text-gray-800"  ></ion-icon>
-                        </div>
-                        <div class="flex items-center justify-center bg-white rounded-xl shadow-lg p-1.5 text-sm  tooltip" data-tip=" تایید شده">
-                            <ion-icon name="shield-checkmark" class="text-xl text-gray-800"></ion-icon>
-                        </div>
+
+                        <div class="rating rating-sm flex items-center justify-center  p-1 text-sm tooltip">
+                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-gray-100" />
+                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                          </div>
                     </div>
 
                 </div>

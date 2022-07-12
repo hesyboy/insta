@@ -1,4 +1,4 @@
-@extends('site.layouts.master')
+@extends('layouts.master')
 
 @section('body')
 <div class="w-full flex items-center justify-center
@@ -58,21 +58,21 @@ background-animate " id="gradient">
                         <div class="flex gap-4 ">
 
                             <div class="flex justify-between gap-6 items-center text-gray-200  p-3  rounded-xl bg-gray-800">
-                                <ion-icon name="reader-outline" class="text-6xl text-yellow-600"></ion-icon>
+                                <ion-icon name="reader-outline" class="text-6xl text-orange-500"></ion-icon>
                                 <div class="flex flex-col gap-2 items-center">
                                     <div class="text-lg">تعداد پیج فروشی </div>
                                     <div class="text-3xl value" akhi="350">0</div>
                                 </div>
                             </div>
                             <div class="flex justify-between gap-6 items-center text-gray-200  p-3  rounded-xl bg-gray-800">
-                                <ion-icon name="people-outline" class="text-6xl text-yellow-600"></ion-icon>
+                                <ion-icon name="people-outline" class="text-6xl text-orange-500"></ion-icon>
                                 <div class="flex flex-col gap-2 items-center">
                                     <div class="text-lg ">تعداد کاربران </div>
                                     <div class="text-3xl value " akhi="800">0</div>
                                 </div>
                             </div>
                             <div class="flex justify-between gap-6 items-center text-gray-200  p-3  rounded-xl bg-gray-800">
-                                <ion-icon name="eye-outline" class="text-6xl text-yellow-600"></ion-icon>
+                                <ion-icon name="eye-outline" class="text-6xl text-orange-500"></ion-icon>
                                 <div class="flex flex-col gap-2 items-center">
                                     <div class="text-lg">بازدید کل  </div>
                                     <div class="text-3xl value" akhi="335600">0</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('site.layouts.headtags')
+    @include('layouts.headtags')
     @livewireStyles
 
 </head>
@@ -10,7 +10,7 @@
 
     <div class="bg-indigo-900">
         <div class="hesheader ">
-            @include('site\layouts\header')
+            @include('layouts.header')
         </div>
     </div>
 
