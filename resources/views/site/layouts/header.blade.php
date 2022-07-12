@@ -48,7 +48,7 @@
         <div class="flex gap-8 items-center justify-center ">
           <div class="flex flex-col items-center">
                 <h2 class="text-2xl text-gray-200">دیجی اینستا</h2>
-                <span class="text-base text-gray-400">DG INSTA</span>
+                <span class="text-xl text-gray-400 font-semibold">DG Insta</span>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex gap-2 ">
@@ -75,15 +75,15 @@
         </div>
         <div class=" flex gap-3 items-center sm:static sm:inset-auto">
 
-            <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-orange-600 hover:bg-orange-500 transition-all duration-500  px-3 py-2 rounded-md text-sm font-medium">
+            <a href="/explore" class="flex items-center gap-2 font-medium text-gray-100 hover:text-white bg-slate-800 hover:bg-orange-400 transition-all duration-500  px-3 py-2 rounded-md text-sm">
                 <ion-icon name="add" class="text-2xl"></ion-icon>
                 <span>فروش پیج اینستاگرام    </span>
               </a>
 
-              <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-indigo-800 hover:bg-indigo-900 transition-all duration-500  px-3 py-2 rounded-md text-sm font-medium">
+              {{-- <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-indigo-800 hover:bg-indigo-900 transition-all duration-500  px-3 py-2 rounded-md text-sm font-medium">
                 <ion-icon name="basket-outline" class="text-2xl"></ion-icon>
                 <span>خرید پیج اینستاگرام    </span>
-              </a>
+              </a> --}}
 
 
             {{-- <a href="#" class="text-gray-100 hover:text-white  bg-indigo-800 hover:bg-indigo-700 transition-all duration-500 px-3 py-2 rounded-md text-sm font-medium">فروش پیج اینستاگرام   </a> --}}

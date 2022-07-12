@@ -183,7 +183,7 @@
                     <div class="grid grid-cols-4 gap-5">
                         @for ($i=0;$i<10;$i++)
 
-                            <x-product.instagram-card/>
+                            <x-product.instagram-card2/>
                         @endfor
                     </div>
                 </div>

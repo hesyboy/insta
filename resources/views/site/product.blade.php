@@ -83,20 +83,27 @@
 
 
             <div class="flex gap-5 my-5">
-                <div class="w-1/5 flex flex-col gap-5">
+                <div class="w-3/12 flex flex-col gap-5">
 
                     <div class="flex flex-col gap-3 p-3 bg-white rounded-xl">
-                        <div>
-                            <img src="https://vamp-brands.com/wp-content/uploads/2021/01/switch-creator-v-business-instagram-account-one.jpg" alt="">
+                        <div class="flex flex-col items-center justify-center gap-3 p-3 bg-white rounded-xl">
+                            <div class="mockup-phone">
+                                <div class="camera"></div>
+                                <div class="display">
+                                  <div class="artboard artboard-demo phone-1 p-1.5">
+                                    <img src="http://127.0.0.1:8000/assets/images/instagram1.jpg" alt="">
+                                  </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-2/5">
+                <div class="w-6/12">
                     <div class="flex flex-col gap-3 p-3 bg-white rounded-xl">
                         <div>
                             <div class="flex flex-col text-white  items-center bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-3 rounded-xl">
-                                <div class="w-full flex flex-col justify-end items-end gap-2">
+                                <div class="w-full flex flex-col justify-end items-end gap-2 bg-white p-2 rounded-xl">
                                     <div class="flex w-full items-start justify-between">
                                         <div class="flex flex-col gap-5">
                                             <div class=" w-full flex gap-2  items-start mt-4">
@@ -115,14 +122,14 @@
 
                                             </div>
                                             <div>
-                                                <h2 class="text-2xl"> پیج اینستاگرام کد #35</h2>
+                                                <h2 class="text-2xl text-gray-800"> پیج اینستاگرام کد #35</h2>
                                             </div>
                                         </div>
                                         <div>
-                                            <ion-icon name="logo-instagram" class="text-[170px]"></ion-icon>
+                                            <ion-icon name="logo-instagram" class="text-[170px] text-gray-800"></ion-icon>
                                         </div>
                                     </div>
-                                    <div dir="ltr" class="text-center text-sm">
+                                    <div dir="ltr" class="text-center text-sm text-gray-800">
                                         @hesammahmoodi
                                     </div>
                                 </div>
@@ -145,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-2/5">
+                <div class="w-3/12">
                     <div class="flex flex-col gap-3 p-3 bg-white rounded-xl">
                         <div>
                             <div>asdasdasdasd</div>

@@ -1,11 +1,11 @@
 @extends('site.layouts.master')
 
 @section('body')
-<div class="w-full
+<div class="w-full flex items-center justify-center
 bg-gradient-to-r
-from-indigo-700
-via-purple-700
-to-pink-700
+from-indigo-800
+via-purple-800
+to-pink-800
 background-animate " id="gradient">
     <style>
         body {
@@ -33,38 +33,88 @@ background-animate " id="gradient">
 
 
 
-    <div class="container mx-auto py-24 ">
+    <div class="container mx-auto py-20">
         <div class="flex justify-center items-center gap-5 ">
             <div class="flex flex-col justify-center items-center">
-                <ion-icon name="logo-instagram" class="text-[300px] text-gray-200"></ion-icon>
-                <div class="text-4xl font-semibold text-gray-200">
-                    dginsta.com
-                </div>
+                <ion-icon name="logo-instagram" class="text-[350px] text-gray-800"></ion-icon>
+                {{-- <div class="text-2xl font-semibold  text-gray-200">
+                    DGInsta.com
+                </div> --}}
             </div>
-            <div class="flex flex-col gap-5 items-center">
+            <div class="flex flex-col gap-8 items-center">
                 <div class="w-full flex flex-col gap-5">
-                    <div class="text-6xl font-bold text-gray-200">
-                        دیجی اینستا
+                    <div class="text-6xl font-bold text-gray-100">
+                        دیجی اینستا DGI
                     </div>
+
 
                 </div>
                 <div  class="w-full flex flex-col gap-8">
-                    <div class="text-xl text-gray-200">
-                        سایت رایگان آگهی خرید و فروش پیج و اکانت اینستاگرام
+                    <div class="text-2xl text-gray-200">
+                        معتبرترین بازار آنلاین خرید و فروش پیج اینستاگرام بدون واسطه
                     </div>
 
+                    <div>
+                        <div class="flex gap-4 ">
 
-                    <div class="flex gap-5">
-                        <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-orange-600 hover:bg-orange-500 transition-all duration-500  px-3 py-2 rounded-md text-base font-medium">
-                            <ion-icon name="add" class="text-4xl"></ion-icon>
+                            <div class="flex justify-between gap-6 items-center text-gray-200  p-3  rounded-xl bg-gray-800">
+                                <ion-icon name="reader-outline" class="text-6xl text-yellow-600"></ion-icon>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="text-lg">تعداد پیج فروشی </div>
+                                    <div class="text-3xl value" akhi="350">0</div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between gap-6 items-center text-gray-200  p-3  rounded-xl bg-gray-800">
+                                <ion-icon name="people-outline" class="text-6xl text-yellow-600"></ion-icon>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="text-lg ">تعداد کاربران </div>
+                                    <div class="text-3xl value " akhi="800">0</div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between gap-6 items-center text-gray-200  p-3  rounded-xl bg-gray-800">
+                                <ion-icon name="eye-outline" class="text-6xl text-yellow-600"></ion-icon>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="text-lg">بازدید کل  </div>
+                                    <div class="text-3xl value" akhi="335600">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        const counters = document.querySelectorAll('.value');
+                        const speed = 1000;
+
+                        counters.forEach( counter => {
+                        const animate = () => {
+                            const value = +counter.getAttribute('akhi');
+                            const data = +counter.innerText;
+
+                            const time = value / speed;
+                            if(data < value) {
+                                counter.innerText = Math.ceil(data + time);
+                                setTimeout(animate, 1);
+                                }else{
+                                counter.innerText = value;
+                                }
+
+                        }
+
+                        animate();
+                        });
+                    </script>
+
+                    {{-- <div class="flex gap-5">
+                        <a href="/explore" class="flex border-2 border-gray-200 items-center gap-2 text-gray-200 hover:text-white bg-black/30 hover:bg-orange-500 transition-all duration-500  px-3 py-2 rounded-md text-base font-medium">
+                            <ion-icon name="add" class="text-3xl"></ion-icon>
                             <span>فروش پیج اینستاگرام    </span>
                           </a>
 
-                          <a href="/explore" class="flex items-center gap-2 text-gray-100 hover:text-white bg-indigo-800 hover:bg-indigo-900 transition-all duration-500  px-3 py-2 rounded-md text-base font-medium">
-                            <ion-icon name="basket-outline" class="text-4xl"></ion-icon>
+                          <a href="/explore" class="flex border-2 border-gray-200 items-center gap-2 text-gray-100 hover:text-white  bg-black/30 hover:bg-indigo-600 transition-all duration-500  px-3 py-2 rounded-md text-base font-medium">
+                            <ion-icon name="basket-outline" class="text-3xl"></ion-icon>
                             <span>خرید پیج اینستاگرام    </span>
                           </a>
-                    </div>
+                    </div> --}}
                     {{-- <form action="" class="mt-5">
                         <div class="flex flex-col items-end justify-center gap-3">
                             <div class="w-full flex flex-col items-center justify-center gap-3">
@@ -119,8 +169,9 @@ background-animate " id="gradient">
                 </div> --}}
             </div>
         </div>
-
     </div>
+
+
 </div>
 
 <div class="bg-gray-100">
