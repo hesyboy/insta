@@ -1,15 +1,33 @@
-/* @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-      "./resources/**/*.blade.php",
-      "./resources/**/*.js",
-      "./resources/**/*.vue",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
     ],
+
+
     theme: {
-      extend: {},
+        extend: {
+
+            fontFamily: {
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+            },
+        },
     },
-    plugins: [require("daisyui")],
+
+
+
+    plugins: [require('@tailwindcss/forms'),require("daisyui")],
     daisyui: {
         themes: ["light"],
       },
-  }
+};
+
+
+
+
+
+
