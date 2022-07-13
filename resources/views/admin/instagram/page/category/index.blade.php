@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="text-2xl text-center p-2 font-bold">
-                {{-- {{$Advertises->count()}} --}}
+                {{$categories->count()}}
             </div>
         </div>
 
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="text-2xl text-center p-2 font-bold">
-                {{-- {{$Advertises->where('status',1)->count()}} --}}
+                {{$categories->where('status',1)->count()}}
             </div>
         </div>
 
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="text-2xl text-center p-2 font-bold">
-                {{-- {{$Advertises->where('status',0)->count()}} --}}
+                {{$categories->where('status',0)->count()}}
             </div>
         </div>
 
@@ -45,6 +45,37 @@
 
     </div>
 
+
+
+
+
+
+    <div class="py-3">
+        @if (session('success'))
+        <div class="alert alert-success shadow-lg">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>{{session('success')}}</span>
+            </div>
+          </div>
+        @endif
+        @if (session('update'))
+        <div class="alert alert-warning  shadow-lg">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                <span>{{session('update')}}</span>
+            </div>
+          </div>
+        @endif
+        @if (session('delete'))
+        <div class="alert alert-error  shadow-lg">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                <span>{{session('delete')}}</span>
+            </div>
+          </div>
+        @endif
+    </div>
 
 
 
@@ -59,7 +90,7 @@
 
                 <div>
                     <a class="text-sm text-center py-2 px-4 bg-emerald-600 text-white rounded hover:bg-emerald-700"
-                 href="#">افزودن </a>
+                 href="{{route('admin.instagram.page.category.create')}}">افزودن جدید</a>
                 </div>
 
             </div>
@@ -152,40 +183,20 @@
                             <div class="flex items-center">
 
                                 <div class="rounded-lg py-1 px-2 text-black text-sm">
-                                    <a href="" class=" text-xs text-center py-1 px-2 bg-orange-500 text-white rounded hover:bg-orange-600 ">مشاهده و تغییرات</a>
+                                    <a href="{{route('admin.instagram.page.category.edit',$item)}}" class=" text-xs text-center py-1 px-2 bg-orange-500 text-white rounded hover:bg-orange-600 ">مشاهده و تغییرات</a>
                                 </div>
 
 
 
                                 <div x-data="{'popup': false}">
-                                    <a @click="popup=true" class=" text-xs text-center py-1 px-2 bg-red-700 text-white rounded hover:bg-red-800 "
-                                     href="#">
-                                     حذف
-                                    </a>
+                                    <form action="{{route('admin.instagram.page.category.delete',$item)}}" method="post">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class=" text-xs text-center py-1 px-2 bg-red-700 text-white rounded hover:bg-red-800 ">
+                                        حذف
+                                        </button>
+                                    </form>
 
-
-                                    <div class="fixed inset-0 w-full" x-show="popup" x-cloak x-transition>
-                                        <div class="flex items-center justify-center align-middle min-h-screen">
-                                            <div class="fixed inset-0 bg-gray-700 opacity-50 z-0"></div>
-                                            <div class="inline-block bg-white shadow-lg rounded-lg py-5 px-8 z-10"
-                                             @click.away="popup=false">
-                                                <div>
-                                                    <div class="text-lg text-center mb-1">
-                                                        آیا از حذف مطمئن هستید؟
-                                                    </div>
-                                                    <div class="flex gap-5 p-3 justify-between">
-                                                        <form action="" method="post">
-                                                            @csrf
-                                                            @method('delete')
-                                                            <a  @click="popup=false" class="cursor-pointer text-sm text-center py-2 px-4 bg-red-700 text-white rounded hover:bg-red-600 ">خیر</a>
-                                                            <button type="submit"
-                                                            class="text-sm text-center py-2 px-4 bg-red-700 text-white rounded hover:bg-red-600 ">بله</button>
-                                                        </form>
-                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
 
                                 </div>

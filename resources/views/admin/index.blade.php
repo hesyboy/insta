@@ -14,27 +14,13 @@
 
 
 
-
-
-
-
-            <div class="flex gap-5 my-5">
-
-                <div class="w-1/5">
-                    @include('admin.layouts.sidebar')
-                </div>
-
-                <div class="w-4/5">
-
-
                     <div class="grid grid-cols-4 gap-5">
                         @for ($i=0;$i<10;$i++)
 
                             <x-product.instagram-card2/>
                         @endfor
                     </div>
-                </div>
-            </div>
+
 
 
 

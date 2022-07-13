@@ -19,13 +19,17 @@
           <div class="hidden sm:block sm:ml-6">
             <div class="flex gap-2 ">
 
-              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">دسته بندی ها</a>
+              <div class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-base font-medium flex gap-5">
+                <span>تعداد  کاربر </span>
+                <span>100</span>
+              </div>
 
-              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">جدیدترین ها</a>
 
-              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">تخفیف دار ها</a>
+              <div class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-base font-medium flex gap-5">
+                <span>تعداد آگهی </span>
+                <span>35</span>
+              </div>
 
-              <a href="#" class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-sm font-medium">کارشناسی شده   </a>
 
 
 

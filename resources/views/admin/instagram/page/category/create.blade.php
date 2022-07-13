@@ -15,9 +15,7 @@
                 </div>
             </div>
         </div>
-        <div>
-            <a href="" class=" text-sm text-center py-2 px-4 bg-gray-800 hover:bg-gray-700 text-gray-100 rounded hover:bg-firooze-300 ">بازگشت به دسته بندی ها </a>
-        </div>
+
     </div>
 </div>
 <div class=" my-3  ">
@@ -31,7 +29,7 @@
         <div class="w-full">
 
             <div class="mt-3">
-                <form action="{{route('admin.instagram-page.category.store')}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('admin.instagram.page.category.store')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="w-full flex flex-col gap-5">
 
@@ -158,10 +156,10 @@
 
                             <div class="flex justify-end gap-3 items-center mt-2">
                                 <div class="mt-2">
-                                    <button type="submit" class=" text-sm text-center py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-gray-100 rounded  ">افزودن دسته جدید </button>
+                                    <button type="submit" class=" text-sm text-center py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-gray-100 rounded  ">Add   </button>
                                 </div>
                                 <div class="mt-2">
-                                    <a href="" class=" text-sm text-center py-2 px-4 bg-gray-800 hover:bg-gray-700 text-gray-100 rounded  ">انصراف </a>
+                                    <a href="{{route('admin.instagram.page.category.index')}}" class=" text-sm text-center py-2 px-4 bg-gray-800 hover:bg-gray-700 text-gray-100 rounded  ">Cancel </a>
                                 </div>
                             </div>
                         </div>
