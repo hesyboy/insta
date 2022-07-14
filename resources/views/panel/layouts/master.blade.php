@@ -47,12 +47,12 @@
 
 
 
-<div class="container mx-auto py-5">
+<div class="container mx-auto py-5 md:w-[1000px]">
     <div class="flex gap-5">
-        <div class="w-1/5">
+        <div class="w-1/4">
             @include('panel.layouts.sidebar')
         </div>
-        <div class="w-4/5">
+        <div class="w-3/4">
             @yield('body1')
         </div>
     </div>

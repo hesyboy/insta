@@ -12,4 +12,12 @@ class PageController extends Controller
         // $categories=InstagramPageCategory::all();
         return view('panel.page.advertise.index');
     }
+
+    public function create()
+    {
+        // $categories=InstagramPageCategory::all();
+        return view('panel.page.advertise.create');
+    }
+
+
 }
